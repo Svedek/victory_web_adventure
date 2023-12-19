@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Adventure - Live</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="js/live.js"></script>
+    </head>
+    
+    <body>
+		<header id="page-head">
+			<img id="vision_light" class="light" src="resources/page_components/vision_off.png" alt="Red light" width="64" height="64">
+			<img id="trapped_light" class="light" src="resources/page_components/trapped_off.png" alt="Blue light" width="64" height="64">
+			<img id="time_light" class="light" src="resources/page_components/time_off.png" alt="Green light" width="64" height="64">
+			<div class="fill"></div>
+			<img id="proceed_light" class="light" src="resources/page_components/proceed_off.png" alt="Green light" width="64" height="64">
+		</header>
+		
+        <main>
+			<div class="center">
+				<iframe id="video" class="embed-video" src="resources/video/START.mp4" title="Video player" frameborder="0"></iframe>
+			</div>
+			
+			<br>
+			
+			<div class="center">
+				<form name="myForm" action="" method="GET">
+					<button type="submit" disabled style="display: none" aria-hidden="true"></button>
+					<h2>Enter something in the box: </h2>
+					<input type="text" name="inputbox" value="">
+					<input type="button" name="button" value=">" onClick="mainText(this.form)">
+				</form>
+			</div>
+			
+			<br><br><br>
+			
+			<div class="center" id="extra-action">
+			</div>
+			
+			<br><br>
+			
+			<map name="mark-map">
+				<area shape="rect" coords="80,60,330,295" alt="Mark" onClick="activate('details')">
+			</map>
+			<map name="details-map">
+				<area shape="circle" coords="304,109,25" alt="Skull" onClick="activate('complex')">
+				<area shape="circle" coords="85,325,20" alt="Helmet" onClick="activate('complex')">
+			</map>
+			<map name="complex-map">
+				<area shape="circle" coords="37,44,30" alt="Mark" onClick="activate('vision_complete')">
+			</map>
+        </main>
+    </body>
+</html>

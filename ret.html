@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Adventure - Ret</title>
+		<link rel="stylesheet" type="text/css" href="css/retro.css">
+		<script src="js/retro.js"></script>
+    </head>
+    
+    <body>
+		<header id="page-head">
+			<img id="eye" class="light" src="resources/page_components/light_eye_off.png" alt="Red light" width="64" height="64">
+			<img id="soul" class="light" src="resources/page_components/light_soul_off.png" alt="Green light" width="64" height="64">
+			<img id="wave" class="light" src="resources/page_components/light_wave_off.png" alt="Blue light" width="64" height="64">
+		</header>
+		
+        <main>
+			<iframe id="video" class="embed-video" src="resources/video/test_1.mp4" title="Blasphemous Test" frameborder="0"></iframe>
+			
+			<h2>Enter Something</h2>
+
+			<br><br>
+			
+			<form name="myForm" action="" method="GET">
+				<button type="submit" disabled style="display: none" aria-hidden="true"></button>
+
+				Enter something in the box: <br>
+				<input type="text" name="inputbox" value="">
+				<input type="button" name="button" value=">" onClick="mainText(this.form)">
+			</form>
+			
+			<br>
+			
+			<div id="proceed_div"></div>
+			
+        </main>
+    </body>
+</html>

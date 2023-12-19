@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+
 body {
+	
 	font-family: "Lucida Console", monospace;
 	background-image: url("../resources/page_components/background_large_sparce.png");
 	color: #FFFFFF;
@@ -14,11 +17,11 @@ header {
 main {
 	background-color: #000000;
 	min-height: 800px;
+	border: 8px solid #222222;
 }
 
 .embed-video {
     margin: auto;
-    transform: translate(25%, 0%);
 	text-align:center;
 	width:560px;
 	height:315px;
@@ -28,5 +31,23 @@ main {
 }
 
 .light {
-	margin: 8px 0px 8px 16px;
+	margin: 8px 0px 0px 16px;
+}
+
+.fill {
+	margin: 0 auto;
+}
+
+.center {
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#page-head {
+	display: flex;
+}
+
+#proceed_light {
+	margin-right: 16px;
 }

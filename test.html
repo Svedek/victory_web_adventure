@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="js/test.js"></script>
+    </head>
+    
+    <body>
+		<header id="page-head">
+			<img id="eye" class="light" src="resources/page_components/light_eye_off.png" alt="Red light" width="64" height="64">
+			<img id="soul" class="light" src="resources/page_components/light_soul_off.png" alt="Green light" width="64" height="64">
+			<div class="fill"></div>
+			<img id="wave" class="light" src="resources/page_components/light_wave_off.png" alt="Blue light" width="64" height="64">
+		</header>
+		
+        <main>
+			<iframe id="video" class="embed-video" src="resources/video/test_1.mp4" title="Blasphemous Test" frameborder="0"></iframe>
+			
+			<h2>Demo JavaScript in Head</h2>
+
+			<p id="demo">A Paragraph</p>
+			<button type="button" onclick="myFunction()">Try it</button>
+			
+			<br><br>
+			
+			<form name="myForm" action="" method="GET">
+			  <label for="main_text">Info:</label>
+			  <input type="text" id="main_text" name="main_text">
+			  <input type="button" name="button" value="Enter" onClick="testResults(this.form)">
+			</form>
+			
+			<br>
+			
+			<form name="myForm" action="" method="GET">
+			  Enter something in the box: <br>
+			  <input type="text" name="inputbox" value="">
+			  <input type="button" name="button" value="Click" onClick="mainText(this.form)">
+			</form>
+			
+			<br>
+			
+			<input type="button">
+			<input type="checkbox">
+			<input type="date">
+			<input type="datetime-local">
+			<input type="hidden">
+			<input type="number">
+			<input type="password">
+			<input type="radio">
+			<input type="reset">
+			<input type="submit">
+			<input type="text">
+			<input type="time">
+			
+        </main>
+    </body>
+</html>
