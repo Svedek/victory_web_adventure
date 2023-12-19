@@ -16,7 +16,7 @@ function mainText (form) {
 	
 	if (inputValue == "visions") {
 		clearScene();
-		document.getElementById("video").src = "resources/video/VISIONS.mp4";
+		document.getElementById("video").src = "https://www.youtube.com/embed/smH9O6BLrAQ?si=oKTJ3sbSqs130Ufc";
 		
 		
 		extra_content = document.createElement("div");
@@ -39,12 +39,12 @@ function mainText (form) {
 	
 	if (inputValue == "trapped") {
 		clearScene();
-		document.getElementById("video").src = "resources/video/TRAPPED.mp4";
+		document.getElementById("video").src = "https://www.youtube.com/embed/7fACbYS2pAo?si=Z5eVZ_M-R19gP0oO";
 	}
 	
 	if (inputValue == "motions") {
 		clearScene();
-		document.getElementById("video").src = "resources/video/MOTIONS.mp4";
+		document.getElementById("video").src = "https://www.youtube.com/embed/dvgjywzdVIg?si=W7Cd2daJuGpJisi3";
 	}
 	
 	if (inputValue == "question") { // TODO
@@ -63,18 +63,18 @@ function mainText (form) {
 	if (inputValue == "choices") {
 		clearScene();
 		document.getElementById("trapped_light").src = "resources/page_components/trapped_on.png";
-		document.getElementById("video").src = "resources/video/START.mp4";
+		document.getElementById("video").src = "https://www.youtube.com/embed/yTzNaX3xqMY?si=F3TcLANm3ekBrWFu";
 		trapped = true;
 	}
 	
 	if (inputValue == "time") {
 		clearScene();
-		document.getElementById("video").src = "resources/video/TIME.mp4";
+		document.getElementById("video").src = "https://www.youtube.com/embed/l2pMF3iyM6g?si=zTcWsTP4yeJw900Z";
 	}
 	
 	if (inputValue == "different") {
 		clearScene();
-		document.getElementById("video").src = "resources/video/DIFFERENT.mp4";
+		document.getElementById("video").src = "https://www.youtube.com/embed/V91Vk0xDSTo?si=nQImsveI9V4YwaDs";
 	}
 	
 	if (inputValue == "safe") { // TODO
@@ -92,7 +92,7 @@ function mainText (form) {
 	
 	if (inputValue == "lie") {
 		clearScene();
-		document.getElementById("video").src = "resources/video/LIE.mp4";
+		document.getElementById("video").src = "https://www.youtube.com/embed/_8O_RVNtNTY?si=KEl7zKpimk8--Hjg";
 	}
 	
 	if (inputValue == "plans") { // TODO
@@ -111,7 +111,7 @@ function mainText (form) {
 	if (inputValue == "future") {
 		clearScene();
 		document.getElementById("time_light").src = "resources/page_components/time_on.png";
-		document.getElementById("video").src = "resources/video/START.mp4";
+		document.getElementById("video").src = "https://www.youtube.com/embed/yTzNaX3xqMY?si=F3TcLANm3ekBrWFu";
 		time = true;
 	}
 	
@@ -153,7 +153,7 @@ function activate(thing) {
 	}
 	
 	if (thing == "complex") {
-		document.getElementById("video").src = "resources/video/HAND.mp4";
+		document.getElementById("video").src = "https://www.youtube.com/embed/huhXbahIZyQ?si=trOdhmeLqqGjMbSx";
 		clearScene();
 		
 		extra_content = document.createElement("div");
@@ -174,10 +174,9 @@ function activate(thing) {
 	}
 	
 	if (thing == "vision_complete") {
-		document.getElementById("video").src = "resources/video/START.mp4";
+		document.getElementById("video").src = "https://www.youtube.com/embed/yTzNaX3xqMY?si=F3TcLANm3ekBrWFu";
 		clearScene();
 		document.getElementById("vision_light").src = "resources/page_components/vision_on.png";
-		document.getElementById("video").src = "resources/video/START.mp4";
 		visions = true;
 		
 		if (visions && trapped && time) {
